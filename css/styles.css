@@ -351,49 +351,49 @@ margin: o;}
         background-color:#2F303A;
         padding-top: 60px;
         padding-bottom: 60px;}
-        .footer-div{
+        .footer__flex{
             display: flex;
         }
-    .logo{
+    .footer__logo{
         display: inline-block;
         margin-top: 0px;
         margin-bottom: 20px;
     }
-    .footer .link {color: rgba(255, 255, 255, 0.6);
+    .footer__link {color: rgba(255, 255, 255, 0.6);
         font-size: 14px;
         line-height: 1.71;
         text-decoration: none;
     
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
         
-        .mail{margin-bottom: 9px;}
-    .footer .address{color: var(--ptimary-white-color);
+                .footer__mail{margin-bottom: 9px;}
+    .footer__address{color: var(--ptimary-white-color);
         font-size: 14px;
         line-height: 1.71;
         margin-bottom: 9px;}
-    .footer .link:hover,
-    .footer .link:focus {color: var(--accent-color);}
+    .footer__link:hover,
+    .footer__link:focus {color: var(--accent-color);}
 /* Follow */
 .follow{
     margin-left: 70px;
     margin-top: 12px;
 }
 
-    .follow .list{
+    .follow__list{
         display: flex;
         list-style: none;
         margin: 0;   
     }
    
-    .follow .item{
+    .follow__item{
         width: 44px;
-            height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-        .follow .link {
+        .follow__link {
             width: 100%;
             height: 100%;
             display: flex;
@@ -403,17 +403,17 @@ margin: o;}
     
             
         }
-    .follow .item:hover,
-    .follow .item:focus{
+    .follow__item:hover,
+    .follow__item:focus{
         background-color: var(--accent-color);
         border-radius: 50%;
     }
-    .follow .item:not(:last-child){
+    .follow__item:not(:last-child){
         margin-right: 10px;
     }
          
 
-    .follow .text{
+    .follow__text{
         margin-top: 0;
         margin-bottom: 20px;
         color: var(--ptimary-white-color);
@@ -423,16 +423,17 @@ margin: o;}
         text-transform: uppercase;
     }
 
-    .form-subscription{
+        /* form-subscription */
+    .subscription{
         display: flex;
         width: 358px;
         margin-left: 93px;
     }
-    .form-fieldset{
+    .subscription__fieldset{
         display: flex;
         flex-direction: column;
     }
-    .form-subscription .email{
+    .subscription__email{
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
@@ -445,11 +446,11 @@ margin: o;}
         padding-left: 16px;
         padding-right: 16px;
     }
-    .form-subscription .email::placeholder{
+    .subscription__email::placeholder{
         color: currentColor;
     }
-       .form-subscription .form-title{
-        display: block;
+       .subscription__title{
+            display: block;
             font-weight: 700;
             font-size: 14px;
             line-height: 1,14;
@@ -457,7 +458,7 @@ margin: o;}
             color: #FFFFFF;
             margin-bottom: 20px;
        }
-       .form-subscription .button{
+       .subscription__button{
             /* padding: 10px 28px; */
             text-align: center;
             width: 200px;
@@ -469,10 +470,10 @@ margin: o;}
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
        }
-       .form-subscription .icon{
-        position: absolute;
-        margin-left: 10px;
-        top: 13px;
+        .subscription__icon{
+            position: absolute;
+            margin-left: 10px;
+            top: 13px;
        }
 
 
