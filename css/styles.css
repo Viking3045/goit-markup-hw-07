@@ -209,10 +209,7 @@ margin: o;}
         text-transform: uppercase;
         color: var(--ptimary-white-color);
         background-color: rgba(47, 48, 58, 0.8);
-}
-        .section-title{
-            
-        }
+    }
     /* employee */
         .section.employee{
             background-color: #F5F4FA;
@@ -480,7 +477,7 @@ margin: o;}
 
 
 /* Style Портфоліо */
-.nav-list {
+.nav__list {
     display:flex;
     justify-content:center;
     list-style: none;
@@ -489,11 +486,11 @@ margin: o;}
     margin-top: 0;
 }
 
-    .nav-list .item:not(last-child){
+   .nav__item:not(last-child){
         margin-right:8px;
     }
 
-.button.secondary{
+.nav__button{
     color: var(--title-text-color);
     background-color: #F5F4FA;
     font-weight: 500;
@@ -507,8 +504,8 @@ margin: o;}
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
                
 }
-.button.secondary:hover,
-.button.secondary:focus{ 
+.nav__button:hover,
+.nav__button:focus{ 
     color: var(--ptimary-white-color);
     background-color:var(--accent-color);
     font-weight: 500;
@@ -517,6 +514,7 @@ margin: o;}
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
+    /* product */
 }
 .product-list{
     display: flex;
