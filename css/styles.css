@@ -618,10 +618,10 @@ margin: o;}
     pointer-events: none;
 }
 
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .backdrop__modal{
     transform: translate(-50%, -50%) scale(0,9);
 }
-.modal{
+.backdrop__modal{
     width: 528px;
     height: 581px;
     padding: 40px 39px 40px 41px;
@@ -636,7 +636,7 @@ margin: o;}
     transform:translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .title{
+.backdrop__title{
         font-weight: 700;
         font-size: 20px;
         line-height: 1.15;
@@ -646,7 +646,7 @@ margin: o;}
         color: var(--title-text-color);
         margin-bottom: 12px;
 }
-.modal-button
+.backdrop__button
 {   position: absolute;
     top: 8px;
     right: 8px;
@@ -657,21 +657,19 @@ margin: o;}
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover
+.backdrop__button:hover
 {
     color: var(--accent-color);
 }
-.form-modal .form-fieldset{
+.form__fieldset{
     display: flex;
     margin-bottom: 10px;
+        flex-direction: column;
 }
-.form-modal .form-comment{
-    margin-bottom: 20px;
-}
-.form-modal .info-icon{
+.form__aside{
     position: relative;
 }
-.form-modal .info{
+.form__info{
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         width: 100%;
@@ -680,28 +678,28 @@ margin: o;}
         outline: none;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-modal .info:focus{
+.form__info:focus{
     border: 1px solid #2196F3;
 }
-.form-modal .form-title{
+.form__title{
     font-weight: 400;
         font-size: 12px;
         line-height: 1,16;
         color: #757575;
         margin-bottom: 4px;
 }
-.form-modal .icon{
+.form__icon{
     position: absolute;
     left: 12px;
     top: 11px;
     fill: var(--title-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-modal .info:focus + .icon{
+.form__info:focus + .form__icon{
     fill: var(--accent-color);
     
 }
-.form-modal .text{
+.form__text{
     resize:none;
     width: 448px;
     height: 120px;
@@ -712,32 +710,29 @@ margin: o;}
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
 }
-.form-modal .text:focus{
+.form__text:focus{
     border: 1px solid #2196F3;
 }
 
-.info.text::placeholder{
+.form__aside::placeholder{
     padding: 12px 16px;
 }
-.form-modal .checked{
-margin-right: 7px;
+.form__checked{
+    margin-right: 7px;
+    margin-left: 13px;
+    align-items: center;
+    margin-bottom: 30px;
 }
-.form-modal .checked-text{
+.form__excerpt{
     display: flex;
         font-size: 14px;
         line-height: 1.71;
         align-items: center;
 }
-.form-modal .link {
+.form__link {
     color: #2196F3;
 }
-
-.form-checked {
-    margin-left: 13px;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.form-modal .checked-text::before{
+.form__excerpt::before{
     content: " ";
     display: flex;
     width: 16px;
@@ -747,7 +742,7 @@ margin-right: 7px;
     border-radius: 2px;
 }
 
-.form-modal .checked:checked + .checked-text::before{
+.form__mark:checked + .form__excerpt::before{
     background-color:var(--accent-color);
     border: none;
     background-image: url(../imges/Vector.svg);
@@ -767,9 +762,9 @@ margin-right: 7px;
     overflow:hidden;
 
 }
-.button-form{
-    padding: 10px 52px;
-    margin-left: 124px;
+.form__button{
+        padding: 10px 52px;
+        margin-left: 124px;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
@@ -782,6 +777,7 @@ margin-right: 7px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border: none;
+        cursor: pointer;
         
 }
 

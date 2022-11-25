@@ -339,7 +339,7 @@
         </div>
         <div class="follow">
           <p class="follow__text">Приєднуйтесь</p>
-          <ul class="follow__list list">
+          <ul class="follow__list">
             <li class="follow__item">
               <a class="follow__link" href="">
                 <svg class="follow__icon" width="20" height="20">
@@ -378,49 +378,49 @@
     </footer>
     <!-- Backdrop -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-button" data-modal-close>&#10005;</button>
-        <h2 class="title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="js-speaker-form form-modal">
-              <label class="form-fieldset" ><span class="form-title">Ім'я</span>
-                <span class="info-icon">
-                  <input class="info" type="text" name="name" required  />
-                <svg class="icon" width="18" height="18">
+      <div class="backdrop__modal">
+        <button class="backdrop__button" data-modal-close>&#10005;</button>
+        <h2 class="backdrop__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="js-speaker-form form">
+              <label class="form__fieldset" ><span class="form-title">Ім'я</span>
+                <span class="form__aside">
+                  <input class="form__info" type="text" name="name" required  />
+                <svg class="form__icon" width="18" height="18">
                   <use href="./imges/icons.svg#person-black-18dp-1-1"></use>
                 </svg>
                 </span>
             </label>
               
-              <label class="form-fieldset" >
-                <span class="form-title">Телефон</span>
-                <span class="info-icon">
-                      <input class="info" type="tel" name="tel"  required  />
-              <svg class="icon" width="18" height="18">
+              <label class="form__fieldset" >
+                <span class="form__title">Телефон</span>
+                <span class="form__aside">
+                      <input class="form__info" type="tel" name="tel"  required  />
+              <svg class="form__icon" width="18" height="18">
                   <use href="./imges/icons.svg#phone-black-18dp-1-1"></use>
                 </svg>
                 </span>
              </label>
               
-              <label class="form-fieldset" >
-                <span class="form-title">Пошта</span> 
-                <span class="info-icon">
-                  <input class="info" type="email" name="mail"  required /> 
-              <svg class="icon" width="18" height="18">
+              <label class="form__fieldset" >
+                <span class="form__title">Пошта</span> 
+                <span class="form__aside">
+                  <input class="form__info" type="email" name="mail"  required /> 
+              <svg class="form__icon" width="18" height="18">
                   <use href="./imges/icons.svg#email-black-18dp-1-1"></use>
                 </svg>
                 </span>
                 </label>
-              <label class="form-text" >
-                  <span class="form-title">Коментар</span> 
-                  <textarea class=" text" name="comment" placeholder="Введіть текст"  cols="30" rows="10"></textarea>
+              <label >
+                  <span class="form__title">Коментар</span> 
+                  <textarea class=" form__text" name="comment" placeholder="Введіть текст"  cols="30" rows="10"></textarea>
               </label>
-             <div class="form-checked">
-               <input class="checked visually-hidden" type="checkbox" name="agry" id="checked-modal" value="agry"/>
-                <label class="checked-text" for="checked-modal" >
-                  Погоджуюся з розсилкою та приймаю <a class="link" href="">Умови договору </a>
+             <div class="form__checked">
+               <input class="form__mark visually-hidden" type="checkbox" name="agry" id="checked-modal" value="agry"/>
+                <label class="form__excerpt" for="checked-modal" >
+                  Погоджуюся з розсилкою та приймаю <a class="form__link" href="">Умови договору </a>
                 </label>
              </div>
-              <button class="button-form" type="submit">Відправити
+              <button class="form__button" type="submit">Відправити
               </button>
           </form>
       </div>
