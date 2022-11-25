@@ -337,13 +337,13 @@ margin: o;}
         text-align: center;
         border: transparent;
  }
-    .button.hero__primery {color:var(--ptimary-white-color);
+    .hero__button {color:var(--ptimary-white-color);
         background-color: #2196F3;
 
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .button.hero__primery:hover,
-    .button.hero__primery:focus{background-color: #188CE8;}
+    .hero__button:hover,
+    .hero__button:focus{background-color: #188CE8;}
     .footer{
         background-color:#2F303A;
         padding-top: 60px;
