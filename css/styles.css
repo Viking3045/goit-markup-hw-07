@@ -214,43 +214,45 @@ margin: o;}
             
         }
     /* employee */
-        .section.comand{
+        .section.employee{
             background-color: #F5F4FA;
     }
-    .employee-list{
+    .employee__list{
         display: flex;
         list-style: none;
         margin: 0;
         padding-bottom: 0;
         padding-left: 0;
     }
-    .employee-list .item{
+    .employee__item{
         padding-bottom:30px ;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+         0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
-    .employee-list .item:not(:last-child){
+    .employee__item:not(:last-child){
         margin-right: 30px;
     }
-    .employee-list .title{color:var(--title-text-color);
+    .employee__title{color:var(--title-text-color);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
         margin-bottom: 10px;
         text-align: center;}
-    .employee-list .text{
+    .employee__text{
         font-size: 16px;
         line-height: 1.19x;
         margin-top: 0;
         margin-bottom: 30px;
         text-align: center;
     }
-.employee-list .social-icons{
+.employee__socials{
     display: flex;
     justify-content: center;
     margin-top: 16px;
 }
-    .employee-list .social-item{
+    .employee__social{
         width: 44px;
         height: 44px;
         margin-right: 10px;
@@ -258,26 +260,26 @@ margin: o;}
 
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-         .employee-list .social-item:hover,
-         .employee-list .social-item:focus{
+         .employee__social:hover,
+         .employee__social:focus{
             background-color: var(--accent-color);
             
          }
-    .employee-list .social-link{
+    .employee__link{
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-        .employee-list .social-item:last-child{
+        .employee__social:last-child{
             margin-right: 0;
         }
-        .employee-list .icon{
+        .employee__icon{
             fill: #AFB1B8;
         }
-        .employee-list .social-link:hover .icon,
-        .employee-list .social-link:focus .icon
+        .employee__social:hover .employee__icon,
+        .employee__social:focus .employee__icon
         {
             fill: var(--ptimary-white-color);
         }
